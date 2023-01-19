@@ -29,10 +29,10 @@ Sample JSON file with instructional team list:
   {"email": "cheshire@cat"}
 ]
 ```
-##Note
+## Note
 After downloading the namelist json file, remove the outermost square brackets of the code.
 
-#Scripts
+# Scripts
 create_and_share_google_docs.py: creating a file or folder for each students.
 
 create_teams_file.py: creating a file or folder for a group.
