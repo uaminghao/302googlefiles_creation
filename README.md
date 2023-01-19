@@ -29,6 +29,13 @@ Sample JSON file with instructional team list:
   {"email": "cheshire@cat"}
 ]
 ```
+##Note
+After downloading the namelist json file, remove the outermost square brackets of the code.
+
+#Scripts
+create_and_share_google_docs.py: creating a file or folder for each students
+change_permissions.py : changing the permission so that only the own can edit it, after deadlines.
+create_teams_file.py: creating a file or folder for a group
 
 # Initial Setup
 
@@ -37,33 +44,20 @@ Sample JSON file with instructional team list:
 
 # Naming of Folders and Documents
 
-Folders and files on Google Drive are accessed via internal identifiers (instead of paths). The program first searches for a directory (anywhere) in the Google Drive corresponding to the provided access token matching the parameter `folder`.
+Folders and files on Google Drive are accessed via internal identifiers (instead of paths). The program first searches for a directory (anywhere) in the Google Drive corresponding to the provided access token matching the parameter `folder`. Note: make sure the folder name is identical (Tip: rename the folder name before running this code and change it back after)
 
 If the folder is found, the program creates a blank document for each student listed in the student file, naming each file with the prefix (so that the student knows what the document is about) followed by the student name and the provided student id in parenthesis.
 
 Example:
 ```
-python create_and_share_google_docs.py -f cmput391w19hw1 -a "cmput391 w19 hw1" -s students.json -t document
+python create_and_share_google_docs.py -f cmput123 -a Project1 -s students.json -t document
 ```
 
-Would create documents `Wonderland_Alice_cmput391 w19 hw1` and `Builder_Bob_cmput391 w19 hw1` inside folder with name **cmput391w19hw1**.
+Would create documents `Project1_Wonderland` and `Project1_Builder_Bob` inside folder with name **cmput123**.
 
 It might be best to test everything with an empty student file.
 
-### Legal
+### Python Quickstar
 
 This code wad produced by modifying the [Python Quickstart](https://developers.google.com/drive/api/v3/quickstart/python).
 
-Copyright 2018 Denilson Barbosa
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
