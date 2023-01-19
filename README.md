@@ -33,13 +33,13 @@ Sample JSON file with instructional team list:
 After downloading the namelist json file, remove the outermost square brackets of the code.
 
 # Scripts
-create_and_share_google_docs.py: creating a file or folder for each students.
+"create_and_share_google_docs.py": creating a file or folder for each students.
 
-create_teams_file.py: creating a file or folder for a group.
+"create_teams_file.py": creating a file or folder for a group.
 
-add_permissions.py : adding the permission.
+"add_permissions.py" : adding the permission.
 
-change_permissions.py : changing the permission so that only the own can edit it, after deadlines.
+"change_permissions.py" : changing the permission so that only the own can edit it, after deadlines.
 
 # Initial Setup
 
