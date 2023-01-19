@@ -35,7 +35,7 @@ After downloading the namelist json file, remove the outermost square brackets o
 # Scripts
 "create_and_share_google_docs.py": creating a file or folder for each students.
 
-"create_teams_file.py": creating a file or folder for a group.
+"create_teams_file.py": creating a json file from the excel of team information.
 
 "add_permissions.py" : adding the permission to file/folder.
 
