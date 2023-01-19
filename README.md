@@ -37,9 +37,9 @@ After downloading the namelist json file, remove the outermost square brackets o
 
 "create_teams_file.py": creating a file or folder for a group.
 
-"add_permissions.py" : adding the permission.
+"add_permissions.py" : adding the permission to file/folder.
 
-"change_permissions.py" : changing the permission so that only the own can edit it, after deadlines.
+"change_permissions.py" : changing the permission so that only the own can edit it, after deadlines (4-day window).
 
 # Initial Setup
 
